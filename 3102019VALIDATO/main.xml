@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslstylesheet.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "myTEI.dtd">
+<teiCorpus>
+    <teiHeader> 
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Cartoline dal 1900</title>
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt>
+                    <resp>Trascritto da:</resp>
+                    <name xml:id="Andrea">Andrea Mattei</name>
+                    <name xml:id="Sandro">Sandro Bianchi</name>
+                </respStmt>
+                
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+                
+            </titleStmt>
+            
+           
+            <editionStmt>
+                <edition>Studenti di Codifica di Testi, Corso di Laurea Triennale in Informatica Umanistica, <orgName ref="#UNIPI">Università di Pisa.</orgName>
+                    <!-- COMPILAZIONE -->
+                    <date when="2019">A.A. 2018/2019</date>
+                </edition>
+                
+                <!-- NOME COMPILATORE -->
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <name xml:id="Castagneto">Tommaso Castagneto</name>
+                </respStmt>
+                
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt>
+                    
+                    <resp>Compilatori:</resp>
+                    <name ref="#Castagneto">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabili scientifici:</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="ER">E. Ratti</name>
+                </respStmt>
+            </editionStmt>
+            
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="#UNIPI">Unipi</orgName>
+                </publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Disponibile solo sotto licenza</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - <orgName ref="#UNIPI">Università di Pisa</orgName></addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica. -->
+            <notesStmt>
+                <note>....</note>
+            </notesStmt>
+            
+            <!-- SourceDesc fornisce una descrizione relativa alla o alle fonti da cui è derivato o generato un documento elettronico. -->
+            <!--figlio obbligatorio di fileDesc, fornisce informazioni sulla fonte materiale-->
+            <sourceDesc>
+                <bibl>
+                    <interp>
+                        Tre cartoline del secondo decennio del 1900 tra Giuseppe Turtura, Oliva Turtura e Giovanni Coliola.
+                    </interp>
+                </bibl>
+                
+                <msDesc>
+         
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- COLLOCAZIONE SPECIFICA -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>            
+                    </msIdentifier>
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+                                
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc> 
+                    
+                </msDesc>
+                
+                <listPerson>
+                    <person xml:id="GC">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola</surname>
+                        </persName>                      
+                        <sex>M</sex>
+                        <birth when="1895">
+                            Nato a <placeName ref="#NA">Napoli</placeName>, 1895
+                        </birth>
+                        <death when="1980">
+                            Morto a <placeName ref="#RA">Ravenna</placeName>, 1980</death>
+                        <occupation>
+                            Tenente Colonnello
+                        </occupation>
+                        <certainty locus="value" target="https://www.slideshare.net/trapelicino/giacomo-paolicchicartoline-della-grande-guerra-al-museo-etnografico-della-spezia"><desc>Museo Etnografico del<placeName ref="#SP">la Spezia</placeName></desc></certainty>                    
+                    </person>
+                    
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>                      
+                        <sex>F</sex>
+                        <birth when="1896-08-12">
+                            Nata a <placeName ref="#RA">Ravenna</placeName>, 12-8-1896
+                        </birth>
+                        <occupation when="1935">
+                            Alunna segretaria presso l'Istituto Magistrale "Margherita di Savoia" di <placeName ref="#RA">Ravenna</placeName>
+                        </occupation>
+                        <education n="1">
+                            Licenza di Scuola Normale
+                        </education>
+                        <education n="2" notBefore="1914" notAfter="1915">
+                            Corso di perfezionamento per licenziati della Scuola Normale presso l'Università di Bologna
+                        </education>
+                        <certainty locus="value" target="https://books.google.it/books?id=7Q_GfuI_1PEC&amp;q=oliva+turtura+ravenna&amp;dq=oliva+turtura+ravenna&amp;hl=it&amp;sa=X&amp;ved=0ahUKEwi_kuiFw8DiAhVJCuwKHePFCroQ6AEIMzAC%22%3E"><desc>Ruoli di anzianità del personale del Ministero e di uffici da esso dipendenti</desc></certainty>
+                        <certainty locus="value" target="https://books.google.it/books?id=niGVVFNDkzkC&amp;pg=PA690&amp;lpg=PA690&amp;dq=oliva+turtura+ravenna&amp;source=bl&amp;ots=ULTNgdNj7R&amp;sig=ACfU3U1uIyWzfpnMoXlYuayn5W_4SQBDrw&amp;hl=it&amp;sa=X&amp;ved=2ahUKEwj42eDt4r7iAhVEDewKHfunCMAQ6AEwDXoECAgQAQ#v=onepage&amp;q=oliva%20turtura%20ravenna&amp;f=false%22%3E"><desc>Annuario del Ministero dell'Educazione Nazionale</desc></certainty>
+                        <certainty locus="value" target="https://books.google.it/books?id=7Q_GfuI_1PEC&amp;q=oliva+turtura+ravenna&amp;dq=oliva+turtura+ravenna&amp;hl=it&amp;sa=X&amp;ved=0ahUKEwi_kuiFw8DiAhVJCuwKHePFCroQ6AEIMzAC%22%3E"><desc>Archivio storico dell'<orgName ref="#UNIBO">Università di Bologna</orgName></desc></certainty>                        
+                    </person>
+                    
+                    <person xml:id="GT">
+                        <persName>
+                            <forename>Giuseppe</forename>
+                            <surname>Turtura</surname>
+                        </persName>                      
+                        <sex>M</sex>
+                        <occupation when="1899">
+                            Appaltatore di opere pubbliche
+                        </occupation>                    
+                        <certainty locus="value" target="https://books.google.it/books?id=zQ9SLm7Bt-0C&amp;printsec=frontcover&amp;hl=it#v=onepage&amp;q=giuseppe%20turtura&amp;f=false"><desc>Annuario d'Italia: Guida Generale del Regno</desc></certainty>
+                    </person>
+                    
+                </listPerson>
+               
+                <listPlace>
+                    
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="IT">IT</country>
+                    </place>
+                    
+                    <place xml:id="MI">
+                        <placeName>Milano</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Milano</district>
+                        <district type="provincia">MI</district>
+                        <country key="IT">IT</country>
+                    </place>
+                    
+                    <place xml:id="MO">
+                        <placeName>Modena</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <country key="IT">IT</country>
+                    </place>
+                    
+                    <place xml:id="NA">
+                        <placeName>Napoli</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Napoli</district>
+                        <district type="provincia">NA</district>
+                        <country key="IT">IT</country>
+                    </place>
+                    
+                    <place xml:id="BO">
+                        <placeName>Bologna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Bologna</district>
+                        <district type="provincia">BO</district>
+                        <country key="IT">IT</country>
+                    </place>
+                    
+                    <place xml:id="RO">
+                        <placeName>Roma</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Roma</district>
+                        <district type="provincia">RO</district>
+                        <country key="IT">IT</country>
+                    </place> 
+                    
+                    <place xml:id="PI">
+                        <placeName>Pisa</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Pisa</district>
+                        <district type="provincia">PI</district>
+                        <country key="IT">IT</country>
+                    </place>    
+                    
+                </listPlace>
+                
+                <listOrg>
+                    <org xml:id="UNIPI">
+                        <orgName> Università di <settlement ref="#PI"> Pisa </settlement> </orgName>
+                        <event when="1343-09-03"> <p>Fondata il 3 settembre 1343.</p> </event>
+                        <note>
+                        <ref target="https://www.unipi.it/index.php/presentazione/item/1340-storia-delluniversit%C3%A0">Università di Pisa</ref>
+                        </note>
+                    </org>
+                    
+                    <org xml:id="MESP">
+                            <orgName>Museo Etnografico "Giovanni Podenzana"</orgName>
+                            <location type="adress">
+                                <address>
+                                    <street>Via del Prione <num>156</num>, <placeName ref="SP">La Spezia</placeName></street>
+                                </address>
+                            </location>
+                            <event when="1873"><p>Istituito nel 1873</p></event>
+                            <desc><quote>Il Museo si propone come centro di ricerca e divulgazione dei temi dell'antropologia e della etnografia.</quote></desc>
+                            <note>
+                                <ref target="http://etnografico.museilaspezia.it/"><desc>Museo Etnografico La Spezia</desc></ref>
+                            </note>
+                    </org>
+                    
+                    <org xml:id="UNIBO">
+                        <orgName> Università di <settlement ref="#BO"> Bologna </settlement> </orgName>
+                        <event when="1088"><p>Fondata nel 1088.</p></event>
+                        <note>
+                            <certainty locus="value" target="https://www.unibo.it/it/ateneo/chi-siamo/la-nostra-storia/i-numeri-della-storia"><desc>Università di Bologna</desc></certainty>
+                        </note>
+                        <note>È l'università più antica del mondo.</note>
+                    </org>
+                    
+                </listOrg>
+                
+                <listRelation>
+                    <p>
+                        <interp>
+                            Giovanni Coliola era probabilmente legato in una relazione sentimentale con Olivia e sicuramente in una relazione di corrispondenza. Con certezza sappiamo anche che nel 1933 i due erano sposati. Nell'Annuario del Ministero dell'educazione
+                            Nazionale di quell'anno, infatti, Oliva è identificata come "Coliola Turtura Olivia".
+                        </interp>
+                   
+                        <interp>
+                            Giuseppe Turtura potrebbe essere stato il padre o il fratello di Oliva Turtura. La prima ipotesi è la più probabile, osservando il garbo con cui Giovanni
+                            si pone in una delle cartoline.
+                        </interp>
+                    </p>
+                </listRelation>
+                
+            </sourceDesc>            
+         </fileDesc>
+        
+    </teiHeader>
+     
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina150.xml"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina47.xml" />
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina65.xml" />
+    
+</teiCorpus>
